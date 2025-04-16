@@ -39,6 +39,21 @@ while True:
         break"""
 
 # Exercício 4
+"""num = int(input("Digite um número para verificar se ele é primo: "))
+
+if num <= 1:
+    print("NÚMERO INVÁLIDO")
+else:
+    for n in range (2,num):
+        if num % n == 0:
+            primo = False
+            break
+        else:
+             primo = True
+    if primo:
+        print(f"{num} é um número primo")
+    else:
+        print(f"{num} não é um número primo")"""
 
 # Exercício 5
 
@@ -75,6 +90,36 @@ print("\n> Números Pares: ",pares)
 print("> Números Ímpares: ",impares)"""
 
 # Exercício 7
+"""print("--- CONTAGEM DE VOGAIS ---")
+frase = input("Insira sua frase aqui: ")
+
+a = 0
+e = 0
+i = 0
+o = 0
+u = 0
+
+for letra in frase:
+    if letra == "a" or letra == "A":
+        a += 1
+    elif letra == "e" or letra == "E":
+        e += 1
+    elif letra == "i" or letra == "I":
+        i += 1
+    elif letra == "o" or letra == "O":
+        o += 1
+    elif letra == "u" or letra == "U":
+        u += 1
+
+print(f"-> QUANTIDADE DE VOGAIS NA FRASE: A: {a} | E: {e} | I: {i} | O: {o} | U: {u}")"""
+
+
+
+
+## A ideia é fazer um for range que utilize como parametro 
+                ## o tamanho da frase toda concatenada## fazendo com que eu consiga 
+                # percorrer todos os caractereres da frase e possa fazer uma contagem de
+                ## todas as vogais por if e elif
 
 # Exercício 8
 """import random
@@ -92,7 +137,7 @@ while contagem < 3:
 
 # Exercício 9
 
-quantidade = int(input("Quantos números você deseja digitar: "))
+"""quantidade = int(input("Quantos números você deseja digitar: "))
 numeros = []
 menores = []
 
@@ -102,10 +147,39 @@ for n in range(quantidade):
 
 media = sum(numeros) / quantidade
 
-"""for m in range(numeros):
+for m in range(numeros):
     if m < media:
-        menores.append(m)"""
+        menores.append(m)
 
 print(numeros)
 print(media)
-"""print(menores)"""
+print(menores)"""
+
+# Exercício 10
+"""quantidade = int(input("Quantos números você deseja digitar: "))
+numeros = []
+for n in range(1,quantidade+1):    
+    num = int(input(f"Digite o {n}º número: "))    
+    numeros.append(num)
+    print(sorted(numeros))  # Sorted() é utilizado para organizar listas de maneira ordenada (https://docs.python.org/3/howto/sorting.html)
+    
+print("O segundo maior número é o: ",sorted(numeros)[-2])"""
+
+
+## DESAFIO ##
+# Exercício 1
+"""print("--- SIMULAÇÃO DE POPULAÇÃO DE COELHOS ---")
+
+coelhos_iniciais = int(input("Digite o número inicial de coelhos: "))
+taxa_reproducao = float(input("Digite a taxa de reprodução (% por geração): "))
+taxa_mortalidade = float(input("Digite a taxa de mortalidade (% por geração): "))
+geracoes = int(input("Digite o número de gerações para simular: "))
+populacao = coelhos_iniciais
+
+for gen in range(1, geracoes + 1):
+    nascimentos = populacao * (taxa_reproducao / 100)
+    mortes = populacao * (taxa_mortalidade / 100)
+    populacao = populacao + nascimentos - mortes
+print(f"-> Na {gen}ª geração, terá uma população de: {populacao:.0f} coelhos")"""
+
+# Exercício 2
