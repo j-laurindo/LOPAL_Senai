@@ -1,7 +1,7 @@
 import math
 
-def calcular_imc(peso,alt):
-    IMC = peso / math.pow(alt,2) ## Corrigir erro
+def calcular_imc(peso, alt):
+    IMC = peso / alt ** 2 ## Corrigir erro
     return IMC
 
 peso = float(input("Digite o seu peso (em kG): "))
